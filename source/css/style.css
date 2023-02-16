@@ -94,6 +94,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 html {
   font-size: 16px;
 }

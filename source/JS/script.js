@@ -46,6 +46,7 @@ else {
 $(`.header__burger`).click(function(){
     $(this).toggleClass(`_active`);
     $(`.header__menu`).toggleClass(`_active`);
+    $(`body`).toggleClass(`_lock`);
 });
 
 $(window).resize(function(){
@@ -53,6 +54,8 @@ $(window).resize(function(){
     $(`.arrow`).next().removeClass(`_open`);
     $(`.header__burger`).removeClass(`_active`);
     $(`.header__menu`).removeClass(`_active`);
+    $(`body`).removeClass(`_lock`);
+
 });
 
 $(`.header__menu a`).click(function(){
@@ -60,4 +63,6 @@ $(`.header__menu a`).click(function(){
     $(`.arrow`).next().removeClass(`_open`);
     $(`.header__burger`).removeClass(`_active`);
     $(`.header__menu`).removeClass(`_active`);  
+    $(`body`).removeClass(`_lock`);
+
 });
