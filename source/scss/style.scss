@@ -1,6 +1,6 @@
 @import "nullstyle.scss";
 @import url(https://fonts.googleapis.com/css?family=Lexend+Mega:100,200,300,regular,500,600,700,800,900);
-
+@import "../fonts/fontello-0d0ecbe2/css/fontello.css";
 
 /* подключение_нулевых стилей */
 @import url("../fonts/Gotham-Bold.otf");
@@ -15,6 +15,21 @@
 	font-family: 'Proximanova-regular'; 
 	src: local('Proximanova-regular'),
 		url(../fonts/proximanova-regular.otf); 
+}
+
+i{
+    display: block;
+    color: #7f7f7f;
+font-size: 1.2rem;
+
+}
+.items__website a{
+    display: inline-block;
+    cursor: pointer;
+    margin:0 7px;
+}
+.items__website a::before{
+
 }
 ////Georgia
 
@@ -58,6 +73,7 @@ html {
 
 .header {
     position: fixed;
+    z-index: 9;
     top     : 0;
     left    : 0;
     width   : 100%;
@@ -280,8 +296,7 @@ body._touch .arrow {
 }
 //////////////////////////////////////////////////header////////////////////////////
 .page{
-    position: relative;
-    z-index: -1;
+   
 }
 .team-block {
     padding  : 2% 25px;
@@ -366,6 +381,8 @@ margin-bottom: 5.714286%; /* 12/210 */
     font-size: 1rem;
     color: #303030;
     margin-bottom:7.142857%; /* 15/210 */
+    font-weight: 700;
+
 
 }
 .items__subtitle {
@@ -474,8 +491,7 @@ margin-bottom: 11.428571%; /* 24/210 */
     }
 
     .menu__list li a {
-        padding: 15px 0;
-        padding-left: 25px;
+        padding:  15px;
     }
 
     .arrow{
@@ -523,6 +539,11 @@ flex-wrap: wrap;
 
 @media (max-width:576px) {
     .items__subtitle{   
+    }
+
+    .team-block {
+       
+    padding-bottom: calc(24/16*1rem); /* 49/900 */
     }
 }
 

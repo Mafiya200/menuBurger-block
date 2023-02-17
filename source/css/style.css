@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import url(https://fonts.googleapis.com/css?family=Lexend+Mega:100,200,300,regular,500,600,700,800,900);
+@import "../fonts/fontello-0d0ecbe2/css/fontello.css";
 @import url("../fonts/Gotham-Bold.otf");
 * {
   padding: 0;
@@ -85,6 +86,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Proximanova-regular";
   src: local("Proximanova-regular"), url(../fonts/proximanova-regular.otf);
 }
+i {
+  display: block;
+  color: #7f7f7f;
+  font-size: 1.2rem;
+}
+
+.items__website a {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 7px;
+}
+
 /* Шрифты_конец */
 /* Шаблоны */
 body {
@@ -121,6 +134,7 @@ html {
 
 .header {
   position: fixed;
+  z-index: 9;
   top: 0;
   left: 0;
   width: 100%;
@@ -337,11 +351,6 @@ body._touch .arrow {
   right: 5px;
 }
 
-.page {
-  position: relative;
-  z-index: -1;
-}
-
 .team-block {
   padding: 2% 25px;
   padding-top: 3.0625rem;
@@ -439,6 +448,7 @@ body._touch .arrow {
   color: #303030;
   margin-bottom: 7.142857%;
   /* 15/210 */
+  font-weight: 700;
 }
 
 .items__subtitle {
@@ -545,8 +555,7 @@ body._touch .arrow {
   }
 
   .menu__list li a {
-    padding: 15px 0;
-    padding-left: 25px;
+    padding: 15px;
   }
 
   .arrow {
@@ -590,5 +599,11 @@ body._touch .arrow {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+}
+@media (max-width: 576px) {
+  .team-block {
+    padding-bottom: 1.5rem;
+    /* 49/900 */
   }
 }

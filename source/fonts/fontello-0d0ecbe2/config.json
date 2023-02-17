@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 3841,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7132e1233bc16cd1b6efe7e29d3613a5",
+      "css": "linkedin",
+      "code": 3842,
+      "src": "entypo"
+    },
+    {
+      "uid": "f5b8e78b48e3028969a964e002daf745",
+      "css": "skype",
+      "code": 3843,
+      "src": "typicons"
+    },
+    {
+      "uid": "199c44bca402ec5a6351f75ba5228375",
+      "css": "dribbble",
+      "code": 3844,
+      "src": "fontawesome"
+    }
+  ]
+}
